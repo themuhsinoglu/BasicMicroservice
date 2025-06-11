@@ -1,0 +1,47 @@
+﻿services:
+  mssql.db.order:
+    restart: always
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    container_name: mssql.db.order.container
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${MSSQL_PASSWORD}
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql.db.order.volume:/data/db
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq.container
+    restart: always
+    ports:
+      - "5672:5672" # RabbitMQ istemci bağlantı noktası
+      - "15672:15672" # RabbitMQ yönetim arayüzü (management UI) bağlantı noktası
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_USER}    # Burayı güncelledik
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD} # Burayı güncelledik
+    volumes:
+      - rabbitmq.volume:/var/lib/rabbitmq # Verilerin kalıcı olması için volume
+  mongo.db.stock:
+    restart: always
+    image: mongo:8.0-rc
+    container_name: mongo.db.stock.container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+    ports:
+      - "27030:27017"
+    volumes:
+      - mongo.db.stock.volume:/data/db
+  mongo.db.stock.ui:
+    image: mongo-express:1.0.2-20-alpine3.19
+    container_name: mongo.db.stock.ui.container
+    ports:
+      - 27032:8081
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@mongo.db.stock:27017/
+      ME_CONFIG_BASICAUTH: false
+volumes:
+  mssql.db.order.volume:
+  rabbitmq.volume:
+  mongo.db.stock.volume:

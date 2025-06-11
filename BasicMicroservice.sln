@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{C4D97202-3768-403B-A1CC-46C51CCFB071}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8A410D79-748C-4966-833D-3E54BBAED2C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{2419AD8D-81F2-48A2-BBF8-5136ABB32B8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "order", "order", "{E530D453-8B8A-476F-A743-BEAABD456B36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "payment", "payment", "{C5A5A3FD-2009-4566-9C37-321D6FC5F0FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "stock", "stock", "{18F07BEF-18C9-4164-A3C6-99557F6176B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMicroservice.Order.API", "src\services\order\BasicMicroservice.Order.API\BasicMicroservice.Order.API.csproj", "{E7BE9B27-AA20-4443-9D5B-D18446B6A6EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DAAB06A4-4C62-4754-894E-A6818F0696E2}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+		.env = .env
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMicroservice.Shared", "shared\BasicMicroservice.Shared\BasicMicroservice.Shared.csproj", "{2B2EE635-8FD5-4319-AB28-D0C985F8590B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMicroservice.Payment.API", "src\services\payment\BasicMicroservice.Payment.API\BasicMicroservice.Payment.API.csproj", "{471D08E2-79AF-4D2E-B1CA-5130ABB5C4ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMicroservice.Stock.API", "src\services\stock\BasicMicroservice.Stock.API\BasicMicroservice.Stock.API.csproj", "{0C8C29E8-DBB0-49BE-B3BE-E9965C199BFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2419AD8D-81F2-48A2-BBF8-5136ABB32B8C} = {8A410D79-748C-4966-833D-3E54BBAED2C6}
+		{E530D453-8B8A-476F-A743-BEAABD456B36} = {2419AD8D-81F2-48A2-BBF8-5136ABB32B8C}
+		{C5A5A3FD-2009-4566-9C37-321D6FC5F0FB} = {2419AD8D-81F2-48A2-BBF8-5136ABB32B8C}
+		{18F07BEF-18C9-4164-A3C6-99557F6176B4} = {2419AD8D-81F2-48A2-BBF8-5136ABB32B8C}
+		{E7BE9B27-AA20-4443-9D5B-D18446B6A6EC} = {E530D453-8B8A-476F-A743-BEAABD456B36}
+		{2B2EE635-8FD5-4319-AB28-D0C985F8590B} = {C4D97202-3768-403B-A1CC-46C51CCFB071}
+		{471D08E2-79AF-4D2E-B1CA-5130ABB5C4ED} = {C5A5A3FD-2009-4566-9C37-321D6FC5F0FB}
+		{0C8C29E8-DBB0-49BE-B3BE-E9965C199BFA} = {18F07BEF-18C9-4164-A3C6-99557F6176B4}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7BE9B27-AA20-4443-9D5B-D18446B6A6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BE9B27-AA20-4443-9D5B-D18446B6A6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BE9B27-AA20-4443-9D5B-D18446B6A6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BE9B27-AA20-4443-9D5B-D18446B6A6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2EE635-8FD5-4319-AB28-D0C985F8590B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2EE635-8FD5-4319-AB28-D0C985F8590B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2EE635-8FD5-4319-AB28-D0C985F8590B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2EE635-8FD5-4319-AB28-D0C985F8590B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471D08E2-79AF-4D2E-B1CA-5130ABB5C4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471D08E2-79AF-4D2E-B1CA-5130ABB5C4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471D08E2-79AF-4D2E-B1CA-5130ABB5C4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471D08E2-79AF-4D2E-B1CA-5130ABB5C4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8C29E8-DBB0-49BE-B3BE-E9965C199BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8C29E8-DBB0-49BE-B3BE-E9965C199BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8C29E8-DBB0-49BE-B3BE-E9965C199BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8C29E8-DBB0-49BE-B3BE-E9965C199BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

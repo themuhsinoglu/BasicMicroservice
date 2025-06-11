@@ -1,0 +1,12 @@
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/bin/Debug/net9.0/BasicMicroservice.Shared.deps.json
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/bin/Debug/net9.0/BasicMicroservice.Shared.dll
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/bin/Debug/net9.0/BasicMicroservice.Shared.pdb
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/BasicMicroservice.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/BasicMicroservice.Shared.AssemblyInfoInputs.cache
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/BasicMicroservice.Shared.AssemblyInfo.cs
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/BasicMicroservice.Shared.csproj.CoreCompileInputs.cache
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/BasicMicroservice.Shared.dll
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/refint/BasicMicroservice.Shared.dll
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/BasicMicroservice.Shared.pdb
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/ref/BasicMicroservice.Shared.dll
+/Users/themuhsinoglu/Desktop/github-projects/BasicMicroservice/shared/BasicMicroservice.Shared/obj/Debug/net9.0/BasicMicroservice.Shared.csproj.AssemblyReference.cache

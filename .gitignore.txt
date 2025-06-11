@@ -1,0 +1,140 @@
+# Git ignore for .NET projects with Rider and Visual Studio
+
+# General
+.vs/
+*.user
+*.suo
+*.pdb
+*.log
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Tt]emp/
+*.tmp
+*.bak
+*.scc
+*.vspscc
+*.vssscc
+*.builds
+_ReSharper.*/
+*.resharper
+*.bak
+[Tt]humbs.db
+[Dd]esktop.ini
+
+# Rider
+.idea/
+*.iml
+
+# Visual Studio
+*.sln.docstates
+*.vsp
+*.bsc
+*.sbr
+*.msbuildpubish
+*.dbmdl
+*.publishproj.user
+*.userold
+*.webpublish
+ReportViewer/
+SQL/
+ProjectSamples/
+UpgradeLog.htm
+_UpgradeReport_Files/
+.tlog/
+*.cache
+*.sdf
+*.vshost.*
+.build.log
+.testrunconfig
+.trx
+*.rdc
+*.vst
+*.nupkg
+*.nuget.props
+packages/
+App_Data/
+Web.config
+Web.Debug.config
+Web.Release.config
+web.config.transform
+web.debug.config.transform
+web.release.config.transform
+config.dbml
+*.dbml.layout
+CustomRules.ruleset
+.vsct
+.testsettings
+.orderedtest
+*.nativecodeanalysis.xml
+PbxCopier.log
+VmDeploy/
+Deploy/
+*.token.json
+*.opensdf
+*.VC.db
+*.exe.config
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Azure Cloud Services
+csx/
+rcf/
+
+# DotNet Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+publish/
+.config/
+.node_modules/
+.npm/
+.vscode/
+
+# Localization
+*.xlf
+
+# WIX
+*.wixobj
+*.wixpdb
+
+# Xamarin
+*.apk
+*.aab
+*.ipa
+*.app
+
+# Unity (if applicable)
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.DS_Store
+*.gdb
+*.pidb
+*.booproj
+*.svclog
+*.opendb
+*.VC.db
+*.sdf
+*.nitrof
+
+# macOS
+.DS_Store
+
+# Linux
+*~
