@@ -1,4 +1,4 @@
-# Git ignore for .NET projects with Rider and Visual Studio
+B# Git ignore for .NET projects with Rider and Visual Studio
 
 # General
 .vs/
@@ -138,3 +138,5 @@ MemoryCaptures/
 
 # Linux
 *~
+# Environment variables
+.env
